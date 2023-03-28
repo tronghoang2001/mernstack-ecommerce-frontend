@@ -1,5 +1,6 @@
 import { Row, Col, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
 const UserOrdersPage = () => {
   return (
     <Row className="m-5">
@@ -7,7 +8,7 @@ const UserOrdersPage = () => {
         <h1>My Orders</h1>
         <Table striped bordered hover>
           <thead>
-            <tr>
+            <tr style={{ backgroundColor: "#ffc107" }}>
               <th>#</th>
               <th>User</th>
               <th>Date</th>
@@ -17,22 +18,24 @@ const UserOrdersPage = () => {
             </tr>
           </thead>
           <tbody>
-            {["bi bi-check-lg text-success", "bi bi-x-lg text-danger"].map(
-              (item, idx) => (
-                <tr key={idx}>
-                  <td>{idx +1}</td>
-                  <td>Mark Twain</td>
-                  <td>2022-09-12</td>
-                  <td>$124</td>
-                  <td>
-                    <i className={item}></i>
-                  </td>
-                  <td>
-                    <Link to="/user/order-details">go to order</Link>
-                  </td>
-                </tr>
-              )
-            )}
+            {[
+              "bi bi-check-lg text-success",
+              "bi bi-x-lg text-danger",
+              "bi bi-check-lg text-success",
+            ].map((item, idx) => (
+              <tr key={idx}>
+                <td>{idx + 1}1</td>
+                <td>Hoang Nguyen</td>
+                <td>16-01-2023</td>
+                <td>$124</td>
+                <td>
+                  <i className={item}></i>
+                </td>
+                <td>
+                  <Link to="/user/order-details">Go to order</Link>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </Table>
       </Col>
@@ -41,4 +44,3 @@ const UserOrdersPage = () => {
 };
 
 export default UserOrdersPage;
-

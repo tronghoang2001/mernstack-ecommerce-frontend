@@ -10,7 +10,7 @@ const PaginationComponent = () => {
       <Pagination.Item>{11}</Pagination.Item>
       <Pagination.Item active>{12}</Pagination.Item>
       <Pagination.Item>{13}</Pagination.Item>
-      <Pagination.Item>{14}</Pagination.Item>
+      <Pagination.Item disabled>{14}</Pagination.Item>
 
       <Pagination.Item>{20}</Pagination.Item>
       <Pagination.Next />

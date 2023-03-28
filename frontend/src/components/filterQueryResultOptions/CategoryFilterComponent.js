@@ -9,8 +9,8 @@ const CategoryFilterComponent = () => {
           <div key={idx}>
             <Form.Check type="checkbox" id={`check-api2-${idx}`}>
               <Form.Check.Input type="checkbox" isValid />
-              <Form.Check.Label style={{ cursor: "pointer" }}>
-                Category-{idx}
+              <Form.Check.Label style={{ cursor: "progress" }}>
+                Category -{idx}
               </Form.Check.Label>
             </Form.Check>
           </div>
@@ -21,4 +21,3 @@ const CategoryFilterComponent = () => {
 };
 
 export default CategoryFilterComponent;
-

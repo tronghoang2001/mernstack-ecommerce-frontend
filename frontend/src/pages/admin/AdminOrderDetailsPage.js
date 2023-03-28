@@ -85,4 +85,3 @@ const AdminOrderDetailsPage = () => {
 };
 
 export default AdminOrderDetailsPage;
-

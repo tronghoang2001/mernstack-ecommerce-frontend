@@ -1,13 +1,6 @@
-import {
-  Row,
-  Col,
-  Container,
-  Form,
-  Button,
-} from "react-bootstrap";
+import { Row, Col, Container, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
 
 const AdminEditUserPage = () => {
   const [validated, setValidated] = useState(false);
@@ -33,13 +26,15 @@ const AdminEditUserPage = () => {
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicFirstName">
               <Form.Label>First name</Form.Label>
-              <Form.Control name="name" required type="text" defaultValue="John" />
+              <Form.Control
+                name="name"
+                required
+                type="text"
+                defaultValue="John"
+              />
             </Form.Group>
 
-            <Form.Group
-              className="mb-3"
-              controlId="formBasicLastName"
-            >
+            <Form.Group className="mb-3" controlId="formBasicLastName">
               <Form.Label>Last name</Form.Label>
               <Form.Control
                 name="lastName"
@@ -50,13 +45,18 @@ const AdminEditUserPage = () => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email</Form.Label>
-              <Form.Control name="email" required type="email" defaultValue="John@email.com" />
+              <Form.Control
+                name="email"
+                required
+                type="email"
+                defaultValue="John@email.com"
+              />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
               <Form.Check name="isAdmin" type="checkbox" label="Is admin" />
             </Form.Group>
-            
+
             <Button variant="primary" type="submit">
               UPDATE
             </Button>
@@ -68,4 +68,3 @@ const AdminEditUserPage = () => {
 };
 
 export default AdminEditUserPage;
-

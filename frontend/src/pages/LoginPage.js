@@ -1,10 +1,9 @@
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Spinner from 'react-bootstrap/Spinner'
+import Spinner from "react-bootstrap/Spinner";
 const LoginPage = () => {
   const [validated, setValidated] = useState(false);
-
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -21,8 +20,6 @@ const LoginPage = () => {
         <Col md={6}>
           <h1>Login</h1>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
-            
-            
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -51,7 +48,7 @@ const LoginPage = () => {
 
             <Row className="pb-2">
               <Col>
-               Don't you have an account?
+                Don't you have an account?
                 <Link to={"/register"}> Register </Link>
               </Col>
             </Row>
@@ -67,7 +64,7 @@ const LoginPage = () => {
               Login
             </Button>
             <Alert show={true} variant="danger">
-                Wrong credentials
+              Wrong credentials
             </Alert>
           </Form>
         </Col>
@@ -77,4 +74,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-

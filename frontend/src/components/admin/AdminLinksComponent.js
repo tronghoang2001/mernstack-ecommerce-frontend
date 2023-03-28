@@ -1,5 +1,5 @@
-import { Nav, Navbar } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 
 const AdminLinksComponent = () => {
   return (
@@ -12,7 +12,7 @@ const AdminLinksComponent = () => {
           <Nav.Link>Products</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/admin/users">
-          <Nav.Link>Users</Nav.Link>
+          <Nav.Link>Users List</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/admin/chats">
           <Nav.Link>Chats</Nav.Link>
@@ -25,6 +25,4 @@ const AdminLinksComponent = () => {
     </Navbar>
   );
 };
-
 export default AdminLinksComponent;
-

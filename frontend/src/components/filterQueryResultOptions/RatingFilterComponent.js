@@ -1,5 +1,5 @@
-import { Rating } from "react-simple-star-rating";
 import { Form } from "react-bootstrap";
+import { Rating } from "react-simple-star-rating";
 import { Fragment } from "react";
 
 const RatingFilterComponent = () => {
@@ -21,4 +21,3 @@ const RatingFilterComponent = () => {
 };
 
 export default RatingFilterComponent;
-

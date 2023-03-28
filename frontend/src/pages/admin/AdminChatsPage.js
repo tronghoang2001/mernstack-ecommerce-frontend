@@ -17,4 +17,3 @@ const AdminChatsPage = () => {
 };
 
 export default AdminChatsPage;
-

@@ -12,4 +12,3 @@ const PriceFilterComponent = () => {
 };
 
 export default PriceFilterComponent;
-

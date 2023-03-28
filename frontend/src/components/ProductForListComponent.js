@@ -1,29 +1,49 @@
 import { Card, Button, Row, Col } from "react-bootstrap";
-import { Rating } from "react-simple-star-rating";
 import { LinkContainer } from "react-router-bootstrap";
+import { Rating } from "react-simple-star-rating";
+import "../styles/product-card.css";
 
-const ProductForListComponent = ({images, idx}) => {
+const ProductForListComponent = ({ idx }) => {
+  const images = [
+    "/images/product/product_1.jpg",
+    "/images/product/product_2.jpg",
+    "/images/product/product_3.jpg",
+    "/images/product/product_4.jpg",
+    "/images/product/product_5.png",
+  ];
   return (
-    <Card style={{ marginTop: "30px", marginBottom: "50px" }}>
+    <Card className="product">
       <Row>
         <Col lg={5}>
-          <Card.Img variant="top" src={"/images/" + images[idx] + "-category.png"} />
+          <Card.Img
+            variant="top"
+            src={images[idx]}
+            style={{
+              borderRadius: "20px",
+            }}
+          />
         </Col>
         <Col lg={7}>
           <Card.Body>
-            <Card.Title>Product Name Lorem ipsum dolor sit amet</Card.Title>
+            <Card.Title>Product Name</Card.Title>
             <Card.Text>
-              Product Description Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Magni ipsa ducimus architecto explicabo id
-              accusantium nihil exercitationem autem porro esse.
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
             </Card.Text>
             <Card.Text>
               <Rating readonly size={20} initialValue={5} /> (1)
             </Card.Text>
             <Card.Text className="h4">
-              $124{" "}
+              $124{""}
               <LinkContainer to="/product-details">
-                <Button variant="danger">See product</Button>
+                <Button
+                  variant="danger"
+                  style={{
+                    marginLeft: "15px",
+                  }}
+                >
+                  See Product
+                </Button>
               </LinkContainer>
             </Card.Text>
           </Card.Body>
@@ -34,4 +54,3 @@ const ProductForListComponent = ({images, idx}) => {
 };
 
 export default ProductForListComponent;
-

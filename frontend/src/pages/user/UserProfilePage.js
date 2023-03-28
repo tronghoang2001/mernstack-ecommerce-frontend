@@ -140,7 +140,9 @@ const UserProfilePage = () => {
               </Form.Control.Feedback>
             </Form.Group>
 
-            <Button variant="primary" type="submit">Update</Button>
+            <Button variant="primary" type="submit">
+              Update
+            </Button>
             <Alert show={true} variant="danger">
               User with that email already exists!
             </Alert>
@@ -155,4 +157,3 @@ const UserProfilePage = () => {
 };
 
 export default UserProfilePage;
-

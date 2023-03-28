@@ -1,19 +1,19 @@
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Spinner from 'react-bootstrap/Spinner'
+import Spinner from "react-bootstrap/Spinner";
 const RegisterPage = () => {
   const [validated, setValidated] = useState(false);
 
   const onChange = () => {
-      const password = document.querySelector("input[name=password]")
-      const confirm = document.querySelector("input[name=confirmPassword]")
-      if(confirm.value === password.value) {
-          confirm.setCustomValidity("")
-      } else {
-          confirm.setCustomValidity("Passwords do not match")
-      }
-  }
+    const password = document.querySelector("input[name=password]");
+    const confirm = document.querySelector("input[name=confirmPassword]");
+    if (confirm.value === password.value) {
+      confirm.setCustomValidity("");
+    } else {
+      confirm.setCustomValidity("Passwords do not match");
+    }
+  };
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -63,7 +63,7 @@ const RegisterPage = () => {
                 placeholder="Enter email"
               />
               <Form.Control.Feedback type="invalid">
-                Please anter a valid email address
+                Please enter a valid email address
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -77,7 +77,7 @@ const RegisterPage = () => {
                 onChange={onChange}
               />
               <Form.Control.Feedback type="invalid">
-                Please anter a valid password
+                Please enter a valid password
               </Form.Control.Feedback>
               <Form.Text className="text-muted">
                 Password should have at least 6 characters
@@ -116,10 +116,10 @@ const RegisterPage = () => {
               Submit
             </Button>
             <Alert show={true} variant="danger">
-                User with that email already exists!
+              User with that email already exists!
             </Alert>
             <Alert show={true} variant="info">
-                User created
+              User created
             </Alert>
           </Form>
         </Col>
@@ -129,4 +129,3 @@ const RegisterPage = () => {
 };
 
 export default RegisterPage;
-

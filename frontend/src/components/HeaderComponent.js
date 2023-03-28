@@ -1,12 +1,12 @@
 import {
-  Navbar,
-  Nav,
   Container,
+  Nav,
+  Navbar,
   NavDropdown,
   Badge,
   Form,
-  DropdownButton,
   Dropdown,
+  DropdownButton,
   Button,
   InputGroup,
 } from "react-bootstrap";
@@ -30,7 +30,7 @@ const HeaderComponent = () => {
                 <Dropdown.Item>Cars</Dropdown.Item>
                 <Dropdown.Item>Books</Dropdown.Item>
               </DropdownButton>
-              <Form.Control type="text" placeholder="Search in shop ..." />
+              <Form.Control type="text" placeholder="Search in shop..." />
               <Button variant="warning">
                 <i className="bi bi-search text-dark"></i>
               </Button>
@@ -40,11 +40,14 @@ const HeaderComponent = () => {
             <LinkContainer to="/admin/orders">
               <Nav.Link>
                 Admin
-                <span className="position-absolute top-1 start-10 translate-middle p-2 bg-danger border border-light rounded-circle"></span>
+                <span
+                  className="position-absolute top-1 start-10 
+                translate-middle p-2 bg-danger border border-light 
+                rounded-circle"
+                ></span>
               </Nav.Link>
             </LinkContainer>
-
-            <NavDropdown title="John Doe" id="collasible-nav-dropdown">
+            <NavDropdown title="Hoang Nguyen" id="collasible-nav-dropdown">
               <NavDropdown.Item
                 eventKey="/user/my-orders"
                 as={Link}
@@ -65,10 +68,8 @@ const HeaderComponent = () => {
             </LinkContainer>
             <LinkContainer to="/cart">
               <Nav.Link>
-                <Badge pill bg="danger">
-                  2
-                </Badge>
-                <i className="bi bi-cart-dash"></i>
+                <Badge bg="danger">2</Badge>
+                <i className="bi bi-cart"></i>
                 <span className="ms-1">CART</span>
               </Nav.Link>
             </LinkContainer>
@@ -80,4 +81,3 @@ const HeaderComponent = () => {
 };
 
 export default HeaderComponent;
-

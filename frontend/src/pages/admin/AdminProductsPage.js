@@ -1,9 +1,10 @@
 import { Row, Col, Table, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import AdminLinksComponent from "../../components/admin/AdminLinksComponent";
+
 const deleteHandler = () => {
-    if(window.confirm("Are you sure?")) alert("Product deleted!")
-}
+  if (window.confirm("Are you sure?")) alert("Product deleted!");
+};
 const AdminProductsPage = () => {
   return (
     <Row className="m-5">
@@ -21,7 +22,7 @@ const AdminProductsPage = () => {
         </h1>
         <Table striped bordered hover responsive>
           <thead>
-            <tr>
+            <tr style={{ backgroundColor: "#ffc107" }}>
               <th>#</th>
               <th>Product Name</th>
               <th>Price</th>
@@ -31,9 +32,9 @@ const AdminProductsPage = () => {
           </thead>
           <tbody>
             {[
-              { name: "Panasonic", price: "$250", category: "TV" },
-              { name: "Lenovo", price: "$1000", category: "Laptops" },
-              { name: "GTA 10", price: "$345", category: "Games" },
+              { name: "Nike Air Jordan", price: "$250", category: "Sneakers" },
+              { name: "Nike Air Jordan", price: "$250", category: "Sneakers" },
+              { name: "Nike Air Jordan", price: "$250", category: "Sneakers" },
             ].map((item, idx) => (
               <tr key={idx}>
                 <td>{idx + 1}</td>
@@ -47,7 +48,11 @@ const AdminProductsPage = () => {
                     </Button>
                   </LinkContainer>
                   {" / "}
-                  <Button variant="danger" className="btn-sm" onClick={deleteHandler}>
+                  <Button
+                    variant="danger"
+                    className="btn-sm"
+                    onClick={deleteHandler}
+                  >
                     <i className="bi bi-x-circle"></i>
                   </Button>
                 </td>
@@ -61,4 +66,3 @@ const AdminProductsPage = () => {
 };
 
 export default AdminProductsPage;
-

@@ -11,14 +11,17 @@ const HomePage = () => {
     "Cameras",
     "Books",
     "Videos",
+    "Sneakers",
   ];
   return (
     <>
       <ProductCarouselComponent />
       <Container>
-        <Row xs={1} md={2} className="g-4 mt-5">
+        <Row xs={1} md={3} className="g-4 mt-5">
           {categories.map((category, idx) => (
-            <CategoryCardComponent key={idx} category={category} idx={idx} />
+            <div>
+              <CategoryCardComponent key={idx} category={category} idx={idx} />
+            </div>
           ))}
         </Row>
       </Container>
@@ -27,4 +30,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-

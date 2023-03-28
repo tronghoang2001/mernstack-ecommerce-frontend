@@ -10,16 +10,11 @@ import {
 } from "react-bootstrap";
 import { Rating } from "react-simple-star-rating";
 import AddedToCartMessageComponent from "../components/AddedToCartMessageComponent";
-
 import ImageZoom from "js-image-zoom";
 import { useEffect } from "react";
 
 const ProductDetailsPage = () => {
   var options = {
-    // width: 400,
-    // zoomWidth: 500,
-    // fillContainer: true,
-    // zoomPosition: "bottom",
     scale: 2,
     offset: { vertical: 0, horizontal: 0 },
   };
@@ -38,20 +33,20 @@ const ProductDetailsPage = () => {
             <Image
               crossOrigin="anonymous"
               fluid
-              src="/images/games-category.png"
+              src="/images/product/product_1.jpg"
             />
           </div>
           <br />
           <div id="second">
-            <Image fluid src="/images/monitors-category.png" />
+            <Image fluid src="/images/product/product_2.jpg" />
           </div>
           <br />
           <div id="third">
-            <Image fluid src="/images/tablets-category.png" />
+            <Image fluid src="/images/product/product_3.jpg" />
           </div>
           <br />
           <div id="fourth">
-            <Image fluid src="/images/games-category.png" />
+            <Image fluid src="/images/product/product_4.jpg" />
           </div>
           <br />
         </Col>
@@ -69,14 +64,19 @@ const ProductDetailsPage = () => {
                   Price <span className="fw-bold">$345</span>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  Porta ac consectetur ac Lorem ipsum dolor, sit amet
-                  consectetur adipisicing elit. Perferendis, illo.
+                  Porta ac consectetur ac ac consectetur ac ac consectetur ac ac
+                  consectetur ac ac consectetur ac ac consectetur ac ac
+                  consectetur ac ac consectetur ac ac consectetur ac ac
+                  consectetur ac ac consectetur ac ac consectetur ac ac
+                  consectetur ac ac consectetur ac ac consectetur ac ac
+                  consectetur ac ac consectetur ac ac consectetur ac ac
+                  consectetur ac ac consectetur ac.
                 </ListGroup.Item>
               </ListGroup>
             </Col>
-            <Col md={4}>
+            <Col className="mt-5">
               <ListGroup>
-                <ListGroup.Item>Status: in stock</ListGroup.Item>
+                <ListGroup.Item>Status in stock</ListGroup.Item>
                 <ListGroup.Item>
                   Price: <span className="fw-bold">$345</span>
                 </ListGroup.Item>
@@ -101,12 +101,12 @@ const ProductDetailsPage = () => {
               <ListGroup variant="flush">
                 {Array.from({ length: 10 }).map((item, idx) => (
                   <ListGroup.Item key={idx}>
-                    John Doe <br />
+                    Hoang Nguyen <br />
                     <Rating readonly size={20} initialValue={4} />
                     <br />
-                    20-09-2001 <br />
-                    Porta ac consectetur ac Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit. Perferendis, illo.
+                    07-10-2001 <br />
+                    Porta ac consectetur ac ac consectetur ac ac consectetur ac
+                    ac consectetur ac ac consectetur ac ac consectetur ac ac.
                   </ListGroup.Item>
                 ))}
               </ListGroup>
@@ -120,12 +120,12 @@ const ProductDetailsPage = () => {
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
             <Form.Select aria-label="Default select example">
-              <option>Your rating</option>
+              <option>Your review</option>
               <option value="5">5 (very good)</option>
               <option value="4">4 (good)</option>
               <option value="3">3 (average)</option>
               <option value="2">2 (bad)</option>
-              <option value="1">1 (awful)</option>
+              <option value="1">1 (awfil)</option>
             </Form.Select>
             <Button className="mb-3 mt-3" variant="primary">
               Submit
@@ -138,4 +138,3 @@ const ProductDetailsPage = () => {
 };
 
 export default ProductDetailsPage;
-

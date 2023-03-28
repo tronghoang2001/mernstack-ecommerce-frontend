@@ -14,4 +14,3 @@ const SortOptionsComponent = () => {
 };
 
 export default SortOptionsComponent;
-

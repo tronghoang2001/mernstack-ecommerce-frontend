@@ -25,7 +25,7 @@ const UserCartDetailsPage = () => {
             </Col>
             <Col md={6}>
               <h2>Payment method</h2>
-              <Form.Select>
+              <Form.Select disabled={false}>
                 <option value="pp">PayPal</option>
                 <option value="cod">
                   Cash On Delivery (delivery may be delayed)
@@ -35,7 +35,7 @@ const UserCartDetailsPage = () => {
             <Row>
               <Col>
                 <Alert className="mt-3" variant="danger">
-                  Not delivered. In order to make order, fill out your profile with correct address, city etc.
+                  Not delivered
                 </Alert>
               </Col>
               <Col>
@@ -85,4 +85,3 @@ const UserCartDetailsPage = () => {
 };
 
 export default UserCartDetailsPage;
-

@@ -1,4 +1,4 @@
-import { Container, Row, Col, Alert, ListGroup, Button } from "react-bootstrap";
+import { Row, Col, Container, Alert, ListGroup, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import CartItemComponent from "../components/CartItemComponent";
 
@@ -18,7 +18,7 @@ const CartPage = () => {
         <Col md={4}>
           <ListGroup>
             <ListGroup.Item>
-              <h3>Subtotal (2 Items)</h3>
+              <h3>Subtotal (3 Items)</h3>
             </ListGroup.Item>
             <ListGroup.Item>
               Price: <span className="fw-bold">$892</span>
@@ -36,4 +36,3 @@ const CartPage = () => {
 };
 
 export default CartPage;
-

@@ -1,4 +1,5 @@
-import { Row, Col, Image, ListGroup, Form, Button } from "react-bootstrap";
+import { ListGroup, Row, Col, Image, Button } from "react-bootstrap";
+import Quantity from "../components/Quantity";
 
 const CartItemComponent = () => {
   return (
@@ -6,21 +7,26 @@ const CartItemComponent = () => {
       <ListGroup.Item>
         <Row>
           <Col md={2}>
-            <Image crossOrigin="anonymous" src="/images/games-category.png" fluid />
+            <Image
+              crossOrigin="anonymous"
+              src="/images/product/product_1.jpg"
+              fluid
+            />
           </Col>
           <Col md={2}>
-            Logotech series <br />
-            Gaming mouse
+            Nike Jordan series <br />
+            Air Jordan
           </Col>
           <Col md={2}>
             <b>$89</b>
           </Col>
           <Col md={3}>
-            <Form.Select>
+            {/* <Form.Select>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
-            </Form.Select>
+            </Form.Select> */}
+            <Quantity />
           </Col>
           <Col md={3}>
             <Button
@@ -39,4 +45,3 @@ const CartItemComponent = () => {
 };
 
 export default CartItemComponent;
-

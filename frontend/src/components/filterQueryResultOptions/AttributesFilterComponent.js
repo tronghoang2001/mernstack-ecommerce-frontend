@@ -20,4 +20,3 @@ const AttributesFilterComponent = () => {
 };
 
 export default AttributesFilterComponent;
-
