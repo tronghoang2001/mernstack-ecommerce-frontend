@@ -16,10 +16,7 @@
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.0",
     "react-simple-star-rating": "^4.0.5",
-<<<<<<< HEAD
-=======
     "recharts": "^2.3.2",
->>>>>>> 98d964c9a41e62aeb8019eed22f7262bf8abef4a
     "web-vitals": "^2.1.4"
   },
   "scripts": {
